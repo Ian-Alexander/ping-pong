@@ -6,6 +6,8 @@ var pingPong = function(numbers) {
       result.push("PING");
     } else if (index % 5 === 0 && index % 15 !== 0) {
       result.push("PONG");
+    } else if (index % 15 === 0) {
+    result.push("pInGpOnG");
     } else {
       result.push(index);
   }
