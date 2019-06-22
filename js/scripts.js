@@ -4,6 +4,8 @@ var pingPong = function(numbers) {
   for (var index = 0; index <= numbers; index ++ ) {
     if (index % 3 === 0 && index % 15 !== 0) {
       result.push("PING");
+    } else if (index % 5 === 0 && index % 15 !== 0) {
+      result.push("PONG");
     } else {
       result.push(index);
   }
@@ -14,11 +16,11 @@ return result;
 $(function() {
   $(".ping-pong").submit(function(event){
     event.preventDefault();
-    $("ul#showOutput").empty();
+    $("ul#outputS").empty();
     var numbers = parseInt($("#inputNumber").val());
     var output = pingPong(numbers);
     for (var index = 1; index <= numbers; index++){
-      $("#showOutput").append("<li>" + output[index] + "</li>");
+      $("#outputS").append("<li>" + output[index] + "</li>");
     }
   });
 });
