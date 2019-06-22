@@ -2,7 +2,9 @@
 var pingPong = function(numbers) {
   var result = [];
   for (var index = 0; index <= numbers; index ++ ) {
-    if (index > 0) {
+    if (index % 3 === 0 && index % 15 !== 0) {
+      result.push("PING");
+    } else {
       result.push(index);
   }
 }
