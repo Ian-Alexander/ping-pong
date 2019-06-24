@@ -18,11 +18,11 @@ return result;
 $(function() {
   $(".ping-pong").submit(function(event){
     event.preventDefault();
-    $("ul#outputS").empty();
+    $("ul#showOutput").empty();
     var numbers = parseInt($("#inputNumber").val());
     var output = pingPong(numbers);
     for (var index = 1; index <= numbers; index++){
-      $("#outputS").append("<li>" + output[index] + "</li>");
+      $("#showOutput").append("<li>" + output[index] + "</li>");
     }
   });
 });

@@ -1,3 +1,18 @@
+body {
+  background-color: #c9fffe;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.jumbotron {
+  background-color: #fff7e2;
+}
+
+img {
+  width: 100px;
+  length: 100px;
+}
+
 #result {
   display: none;
 }
